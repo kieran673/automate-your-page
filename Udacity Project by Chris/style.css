@@ -1,0 +1,36 @@
+
+  body {
+    background-color: #C6E4EE;
+    color: white;
+    }
+ 
+ .container {
+  background-color:lightblue;
+  border-radius: 20px;
+  }
+  
+  .info {
+    background-color:#707070;
+    border-style: solid;
+    border-width: 1px;
+    text-align:center;
+    padding: 40px;
+    margin: 20px;
+    border-radius:20px;
+    border-color:#707070;
+    box-shadow: 5px 5px 5px #888888;
+    color: white;
+  }
+  
+  .header {
+  color:#707070
+  }
+
+  h1 {
+    text-align: center;
+    }
+
+.title {
+  color:white;
+  text-shadow: 2px 2px #707070 ;
+}
