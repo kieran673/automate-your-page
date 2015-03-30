@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Christopher's Study notes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <div class = "header" > <h1>Christopher's study notes for HTML and Python</h1></div>
+  <h2 style = "color:black"><left>Table of contents</hr> 
+    <ul>
+      <li> <a href = #Introduction> Introduction </a> </li>
+        <ul>
+          <li> <a href = #Getting_Started> Getting Started </a>
+          <li> <a href = #The_Basics_of_the_Web> The Basics of the Web </a></li>
+        </ul> 
+      <li> <a href = #Introduction_to_HTML> Introduction to HTML </a> </li>
+        <ul>
+          <li> <a href = #Elements> Elements </a>
+          <li> <a href = #Tags> Tags </a></li>
+          <li> <a href = #Attributes>Attributes</a></li>
+        </ul>
+      <li> <a href = #CSS> CSS </a> </li>
+        <ul>
+          <li> <a href = #What_is_CSS> What is CSS </a>
+          <li> <a href = #How_to_Include_CSS_in_a_web_page> How to Include CSS in a web page </a></li>
+          <li> <a href = #Cascade>Cascade</a></li>
+        </ul>
+      <li> <a href = #Python> Python </a> </li>
+        <ul>
+          <li> <a href = #Definitions> Definitions </a>
+          <li> <a href = #Variables> Variables </a></li>
+          <li> <a href = #Lists>Lists</a></li>
+          <li> <a href = #if-elif-else>if/elif/else</a></li>
+          <li> <a href = #Loops>Loops</a></li>
+          <li> <a href = #Function>Function</a></li>
+          
+        </ul>
+    </ul>
+    
+<div class = "container">
+    <div class = "title" id ="Introduction">
+        <h1> Introduction</h1>
+    </div>
+        <div class="info">
+            <div class="subtitle" id ="Getting_Started">
+                <h2>Getting Started</h2>
+            </div>
+
+                Welcome to Christoper's notes on "Web pages, Documents, and Structure".<br>  
+          The first thing we will need is the <a href = "http://www.sublimetext.com/" target = "_blank"> sublime text program </a> (The link will open in a new tab). Once that's download it will be a good idea to set it up for ease of use. <br>
+          More information  can be found at <a ref = "https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3575138706/e-3627848692/m-3601298697" target ="_blank"> Udacity.</a><br>
+          To see both the HTML file and the style files at the same time at the same time, first enable column view by selecting View > Layout > Columns:2.<br>
+          Then drag the CSS file to the new tab.
+        </div>
+        <div class="info">
+            <div class="subtitle" id ="The_Basics_of_the_Web">
+                <h2>The Basics of the Web</h2>
+            </div>
+
+                More information at <a href = "https://www.udacity.com/course/viewer#!/c-ud721-nd/l-3508959201/e-48329854/m-48299873" target = "_blank"> Udacity </a> <br>
+                The web has four basic components:<br>
+                <br><b>HTTP</B>: The main protocol of the web. This site was written in HTTP 
+                <br><b>Browser</b>: A program that runs on a computer and displays files found on the internet.
+                <br><b>Webpage</b>: A hypertext document connected to the World Wide Web.
+                <br><b>The internet</b>:  A global system of interconnected computers<br><br>
+        
+          Web pages are written in HTML. HTML stands for Hypertext Markup Language. HTML documents form the majority of the content on the web. HTML documents contain text content which describes "what you see" and markup which describes "how it looks".<a href = "https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340" targe =" _blank"> This video</a> gives a good overview.<br>
+          When writing HTML it is important to avoid repetion for a number of reasons When writing HTML it is important to avoid repetition for a number of reasons such as<br>
+          <b> Accuracy: </b> We are much less likely to make a mistake on one line of code then multiple lines of code and if we do find a error we only have to correct it once.<br>
+          <b> Consistency: </b> We can easily keep our web page constant and if we want to make a change it is very easy to change large parts of the website at once.<br>
+          <b> Interest: </b> Let's face it, writing the same line of code over and over again would be boring!
+        </div>
+        <br>
+</div>
+
+<div class = "container">
+    <div class = "title" id ="Introduction_to_HTML">
+        <h1> Introduction to HTML </h1>
+    </div>
+        <div class="info">
+            <div class="subtitle" id ="Elements">
+                <h2>Elements</h2>
+            </div>
+
+                An element is made up a of start tag, the content and the end tag.They are written in the following format:<br><br> <center><span style = "text-align:center"><strong></b><span style="color: red">&lttag&gt</span> <span style="color:blue">content </span><span style="color: red">&lt/tag&gt</span></strong></span></center><br>
+        </div>
+          <div class="info">
+            <div class="subtitle" id ="Tags">
+                <h2>Tags</h2>
+            </div>
+
+                A tag is a code that describes how the contents must be formatted. Almost all tags have an opening and closing tag, EXCEPT void tags. A tag is created by putting the name of the tag in angled bracket, an end tag is the same but with a slash after the opening angled bracket and before the tag. <br>  Tags can also be INLINE (the content is displayed <em> <b>without</b></em> a new line break) or BLOCK (The content is displayed within its own box)<br> Below is a table giving details of just a few tags,<br><br>
+        
+    <table style="width:100%" border="3" bordercolor = "white">
+      <tr>
+        <th>Name</th>
+        <th>Tag</th>
+        <th>Description</th>
+        <th>Inline/Block</th>
+        <th>Void?</th>
+      </tr>
+      <tr>
+        <td>Bold</td>
+        <td>&ltb&gt</td>
+        <td>Bolds the contents</td>
+        <td>Inline</td>
+        <td>&#10008 </td>
+      </tr>
+      <tr>
+        <td>Emphasis</td>
+        <td>&ltem&gt</td>
+        <td>Italicizes the contents</td>
+        <td>Inline</td>
+        <td>&#10008</td>
+      </tr>
+      <tr>
+        <td>Link</td>
+        <td>&lta&gt</td>
+        <td>Changes the contents into a link</td>
+        <td>Inline</td>
+        <td>&#10008</td>
+      </tr>
+      <tr>
+        <td>Image</td>
+        <td>&ltimg&gt</td>
+        <td>Adds an image</td>
+        <td>Inline (However img acts <br> more like an "inline block")</td>
+        <td>&#10008</td>
+      </tr>
+      <tr>
+        <td>Break</td>
+        <td>&ltbr&gt</td>
+        <td>Adds a line break to the sentence</td>
+        <td>Inline</td>
+        <td>&#10004</td>
+      </tr>
+      <tr>
+        <td>Paragraph</td>
+        <td>&ltp&gt</td>
+        <td>Creates a new paragraph</td>
+        <td>Block</td>
+        <td>&#10008</td>
+      </tr>
+      <tr>
+        <td>Span</td>
+        <td>&ltspan&gt</td>
+        <td>Groups the contents together</td>
+        <td>Inline</td>
+        <td>&#10008</td>
+      </tr>
+      <tr>
+        <td>Division</td>
+        <td>&ltdiv&gt</td>
+        <td>Groups the contents together in a block</td>
+        <td>Block</td>
+        <td>&#10008</td>
+      </tr>
+    </table>
+  </div>
+        <div class="info">
+            <div class="subtitle" id ="Attributes">
+                <h2>Attributes</h2>
+            </div>
+
+                Attrubributes are put inside the opening tag to modify them.<br> Here are just two examples:<br><br> &ltimg src = "smily_face.jpg" alt = "a smily face" height = "42" width = "42"&gt <br>
+              <ul>
+                <li> src: Gives the source of the image. This tells the program where to get the picture</li>
+                <li> alt: If the picture is unable to load this tells the program what text to show instead.</li>
+                <li> height: Specifies the height of the image in pixels</li>
+                <li> width: Specifies the width of the image in pixels</li>
+              </ul>
+            <br>&ltdiv class = "description example_class ThisIsAClass" id = "example"&gt 
+              <ul>
+                <li> class: gives the element a class which interests with several other things (such as a the CSS file) a div can have several classes seperated by a space.</li>
+                <li> id: Similar to class, however a element can only have <b>ONE</b> id.</li>
+              </ul>
+            <br> There is an incredible ammount of tags and attributes. A good place to see them all is this site: <a href = "http://www.w3schools.com/tags/default.asp" targte = "_blank">http://www.w3schools.com/tags/default.asp</a>
+        </div>
+        <br>
+            </div>
+            
+  <div class = "container">
+    <div class = "title" id ="CSS">
+        <h1> CSS </h1>
+    </div>
+        <div class="info">
+            <div class="subtitle" id ="What_is_CSS">
+                <h2>What is CSS</h2>
+            </div>
+
+                Cascading Style Sheets (CSS) is code written to control the "style" of HTML elements.<br>It is written in the following format: Selector {property: value;}<br>The selector defines what parts of the html to effect. The table below lists some of the more common selectors,<br><br>
+        <table  style="width:100%" border="3" bordercolor = "white">
+              <tr>
+                <th>Selector</th>
+                <th>Example</th>
+                <th>Example description</th>
+              </tr>
+              <tr>
+                <td>Element</td>
+                <td>p</td>
+                <td>selects all &ltp&gt elments</td>
+              </tr>
+              <tr>
+                <td>class</td>
+                <td>.info</td>
+                <td>selects all elements with the class "info"</td>
+              </tr>
+              <tr>
+                <td>#id</td>
+                <td>#first_title</td>
+                <td>selects the element with the id "first_title"</td>
+              </tr>
+        </table>
+            Everything inside the curley brackets is a "rule" that will be applied to every instance of the selector. .At the end of our rule we add a ";" to tell the program that we are finsihed.<br>
+            First is the declaration. For example background-color (which would control the background color).We end the declaration with a colon <br>
+            After the declaration is the value (for example: black).<br><br>
+            so if we wanted to effect every h1 text and turn it blue with a red background we would write:<br> 
+            h1 {<br>background-color: red;<br>color: green<br>}<br> which would create: <span style = "background-color: red; color: blue">This is an example sentence.</span><br>
+        </div>
+                <div class="info">
+            <div class="subtitle" id ="How_to_Include_CSS_in_a_web_page">
+                <h2>How to Include CSS in a web page</h2>
+            </div>
+
+                There are three methods to include CSS in a web page<br><br><h3>Method 1: Write your style inline with your HTML </h3><br><br>Write the CSS inside the individual HTML element. This is not recommended because it requires a lot of repeated code but is useful if you want a certain section to have it's own style.<br><br><h3>Method 2: Write CSS in the <head> of the HTML </h3><br><br>Inside the head element of the HTML add a style element. Write the CSS inside that style element. <br><br><h3>Method 3: Link your HTML to a separate CSS file  </h3><br><br>Put all of your CSS code in a file separate from the HTML file. Add a<link> tag inside the <head> element of the TML file(Since <link> is a "void tag" you don't need to add a closing</link>) then add the following attributes to the <link>: * rel="stylesheet" * type="text/css" *href="main.css"<br>
+        </div>
+        <div class="info">
+            <div class="subtitle" id ="Cascade">
+                <h2>Cascade</h2>
+            </div>
+
+                What happens if the HTML finds two styles rule that apply to the same section? This is where the order is important. Styles are applied in the following order with definitions further down the list overwriting previous definitions
+              <ul>
+                <li> the default style of a browser (different browsers have slightly different styles)</li>
+                <li> stylesheet in a separate file (this is what you will be mostly using)</li>
+                <li> stylesheet inside HTML (this can be done for small projects but is not ideal)</li>
+                <li> inline style in an element (this can also be done but should be avoided)</li>
+              </ul>
+          
+        </div>
+        <br>
+</div>
+<div class = "container">
+    <div class = "title" id ="Python">
+        <h1> Python </h1>
+    </div>
+        <div class="info">
+            <div class="subtitle" id ="Definitions">
+                <h2>Definitions</h2>
+            </div>
+                <b> Program </b><br>
+                A program is a sequence of instructions that tell a computer what to do.<br> 
+                <b> Programming language</b>
+                <br>A programming language is a formal constructed language that gives instructions to a machine.<br>
+                <b>Interpreter</b>
+                <br>An interpreter is a program that executes instructions written in a programming language.<br>
+                <b>Syntax</b>
+                <br>The syntax of a programming language is the rules that define how to make a correctly structured program in that language.<br>
+                <b>Expression</b>
+                <br>An Expression is a particular word, term or value that has a specific meaning in a programming language<br><br>
+                <h3>What is the difference betwen 2 + 2 and “2” +”2”?</h3><br>
+                In python 2 is a number and “2” is a string. This means python treats them differently. For example when using the + operator with numbers would add the numbers together but using them with strings would concatenate the strings. So 2 + 2 would give 4 whereas “2” +”2” would give “22”.
+        </div>
+        <div class="info">
+            <div class="subtitle" id ="Variables">
+                <h2>Variables</h2>
+            </div>
+
+                A variable is a symbol representing a value that can be reused. The value can assigned with the “=” sign, for example My_variable = 2. <br>
+                Variables give us a way to improve the readability of the code and reuse a value over and over again. We can also use them to record and follow changes. For example we can add 2 to My_variable with My_variable += 2. Now My_variable has the value of 4.
+        </div>
+        <div class="info">
+            <div class="subtitle" id ="Lists">
+                <h2>Lists</h2>
+            </div>
+
+                A data structure is a sequence of data. The most basic type of data structure is a <b>list.</b> <br>
+                Lists are sequence of elements surrounded by square brackets for example [‘one’, ‘two’, ‘three’].  Each element is assigned a number which is its position or ”index”. The first index is zero, the second is one, the third is two and so on.<br>
+                This indexing allows us to call specific indexes from the list. In the example above we could use [1] to call ‘two’ or  [1:2] to call ‘two’, ‘three’.<br>
+                What makes lists so useful is their <em>mutability,</em> The ability to change the list. A common method is append. Written as list.append(x) (where list is the list we are mutating and x is the value to be added) this allows us to add a new piece of data to a list.<br>
+                Append is very similar to the operate +, however append will mutate a list but + will create a new list.
+        </div>
+        <div class="info">
+            <div class="subtitle" id ="if-elif-else">
+                <h2>if/elif/else</h2>
+            </div>
+
+                We use if, elif and else to test if the conditions after the if and elif are true <b> before </b> executing the code. If the conditions are not met then that part of the code is skipped.<br>
+                We use else if we want code that will execute if none of the conditions in if and elif are met. We use ‘if’ first, followed by any number of ‘elif’’s and end with else. The order is important as once python finds a condition that is True it stops checking the other ‘if’’s.
+        </div>
+        <div class="info">
+            <div class="subtitle" id ="Loops">
+                <h2>Loops</h2>
+            </div>
+
+                Loops are an extremely useful tool in python that repeat a section of code under certain conditions.there are two types of loops in python <em>for</em> and <em>while</em><br><br>
+                <h3>for:</h3> These loops iterate over a given sequence.
+                <h3>while:</h3> These loops repeat as long as a certain condition is met.
+        </div>
+        <div class="info">
+            <div class="subtitle" id ="Function">
+                <h2>Function</h2>
+            </div>
+
+                A function is a piece of code, then when called (by using the name of the function) executes that code. A function must be <em> made</em> and then <em>used.</em> Functions are made by starting a line of code with the keyword def (which stands for define) and then giving a function name followed by the function parameters in parentheses. when used (or called) we write the name of the function but place actual values into the parentheses. <br>
+                Functions are extremely useful for a programmer since they no longer need to keep rewriting a piece of code that they use over and over again. <br> A very important part of the function is the <b>return</b> statement, this is what produces the output, without this statement the function will run through the code but then won’t actually give python anything to use.
+        </div>
+        <br>
+</div>
+
+</html>
